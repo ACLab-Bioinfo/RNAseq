@@ -182,6 +182,18 @@ done
 ############################################################
 # STAR build index and mapping
 ############################################################
+
+# bulid index
+STAR --runMode genomeGenerate \
+--runThreadN 36 \
+--genomeDir /home/data/ssy033/References/STAR/mm10 \
+--genomeFastaFiles /home/data/ssy033/References/genome/mm10-GRCm38.p6/mm10.fa \
+--sjdbGTFfile /home/data/ssy033/References/genome/mm10-GRCm38.p6/gencode.vM25.annotation.gtf \
+--sjdbOverhang 149 \
+--limitGenomeGenerateRAM 125000000000 \
+> $inputDir"log/2.Alignment/STAR-makeIndex.log" 2>&1 &
+
+
 #  STAR-2.7.1a
 # –runMode mapping 如果需要建index，参数为genomeGenerate
 # –genomeDir index所在路径
