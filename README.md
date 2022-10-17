@@ -1,5 +1,5 @@
 # RNAseq
 
 ## yiling's workflow
-QC(fastp)--Mapping(STAR)--Count(HTSeq)
+QC(fastp)--Mapping(STAR)--Count(HTSeq)  
 Salmon
